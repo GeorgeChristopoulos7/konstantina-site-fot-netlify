@@ -5,12 +5,13 @@
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <script>
+<script>
   if (window.location.hash && window.location.hash.includes('invite_token')) {
     const token = window.location.hash.split('invite_token=')[1];
     window.location.href = `/admin/#invite_token=${token}`;
   }
 </script>
+
 
   <body>
     <script>
