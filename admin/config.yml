@@ -6,13 +6,26 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
-  - name: "content"
-    label: "Περιεχόμενο"
+  - name: "pages"
+    label: "Σελίδες"
     files:
       - label: "Αρχική"
         name: "index"
         file: "index.md"
         fields:
-          - label: "Κείμενο"
-            name: "body"
-            widget: "markdown"
+          - { label: "Τίτλος", name: "title", widget: "string" }
+          - { label: "Περιεχόμενο", name: "body", widget: "markdown" }
+
+      - label: "Σχετικά"
+        name: "about"
+        file: "about.md"
+        fields:
+          - { label: "Τίτλος", name: "title", widget: "string" }
+          - { label: "Περιεχόμενο", name: "body", widget: "markdown" }
+
+      - label: "Σεμινάρια"
+        name: "seminars"
+        file: "_posts/seminars.md"
+        fields:
+          - { label: "Τίτλος", name: "title", widget: "string" }
+          - { label: "Περιεχόμενο", name: "body", widget: "markdown" }
