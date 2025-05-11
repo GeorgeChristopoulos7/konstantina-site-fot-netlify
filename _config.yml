@@ -1,0 +1,10 @@
+title: Konstantina's Teaching Site
+description: Προσωπική σελίδα εκπαιδευτικού
+baseurl: ""
+url: ""
+author: Konstantina
+markdown: kramdown
+plugins:
+  - jekyll-paginate
+paginate: 5
+paginate_path: "/page/:num"
